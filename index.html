@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun with APIs</title>
+
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            background-color: cornflowerblue;
+        }
+
+        .hi {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: fit-content;
+            border: 2px solid brown;
+            padding: 15px;
+            border-radius: 5px;
+            margin-left: 0px;
+            background-color: burlywood;
+            margin-top: 15px;
+            font-size: 20px;
+            margin-bottom: 5px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .hi button {
+            margin-top: 5px;
+        }
+
+        .bye_btn {
+            padding: 5px;
+            border-radius: 8px;
+            border: none;
+            background-color: aquamarine;
+            box-shadow: 0px 0px 7px cadetblue;
+        }
+
+        .ok_btn {
+            padding: 7px;
+            margin-left: 13px;
+            border-radius: 8px;
+            border: none;
+            background-color: aquamarine;
+            box-shadow: 0px 0px 7px cadetblue;
+        }
+
+        .enter {
+            margin: 20px;
+        }
+
+        .container {
+            margin: auto;
+            width: fit-content;
+            background-color: yellow;
+            padding: 5px;
+            border: 2px solid yellowgreen;
+            border-radius: 10px;
+            margin-top: 45px;
+        }
+
+        #greet,
+        #data {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .inp {
+            padding: 7px 30px;
+            border-radius: 5px;
+            background-color: azure;
+            border: none;
+            box-shadow: 0px 0px 5px 1px cyan;
+            width: 250px;
+        }
+
+        .title {
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding-top: 10px;
+        }
+
+        .big_container {
+            display: flex;
+        }
+
+        .loading{
+            height: 50px;
+            width: 50px;
+        }
+
+        @media(max-width: 830px) {
+            .inp {
+                padding: 7px;
+                width: 70vw;
+            }
+
+
+            .big_container {
+                flex-direction: column;
+            }
+
+            .ok_btn {
+                margin: 0px;
+            }
+
+            .enter {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: fit-content;
+                height: 75px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="big_container">
+
+        <div class="container">
+            <h2 class="title"> Nationality predictor </h2>
+            <div class="enter">
+                <input type="text" name="name" id="name" class="inp" placeholder="Enter your name">
+                <button id="ok" class="ok_btn">OK</button>
+            </div>
+            <div id="greet"></div>
+        </div>
+        <div class="container">
+
+            <h2 class="title"> City air-quality checker </h2>
+            <div class="enter">
+                <input type="text" name="city" id="city" class="inp" placeholder="Enter your city">
+                <button id="ok2" class="ok_btn">OK</button>
+            </div>
+            <div id="data"></div>
+        </div>
+
+
+        <script src="index.js"></script>
+</body>
+
+</html>
