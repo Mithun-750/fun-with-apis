@@ -89,14 +89,14 @@ let y = function (event) {
         let data = document.getElementById(`data`);
         let yourcity = city.value;
 
-        loading = document.createElement(`div`)
-        loading.innerHTML = `<img src="https://media.tenor.com/On7kvXhzml4AAAAj/loading-gif.gif" alt="loading.." class="loading">`
-        data.insertAdjacentElement(`beforeend`, loading)
-
+        
         if (yourcity == ``) {
             alert(`Please enter a city name`)
         } else {
-
+            
+            loading = document.createElement(`div`)
+            loading.innerHTML = `<img src="https://media.tenor.com/On7kvXhzml4AAAAj/loading-gif.gif" alt="loading.." class="loading">`
+            data.insertAdjacentElement(`beforeend`, loading)
 
 
             const options2 = {
